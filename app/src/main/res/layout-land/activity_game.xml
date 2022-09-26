@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_game_bg_l">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#75FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/greaterButton"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="150dp"
+        android:backgroundTint="#4A026E"
+        android:text="@string/greater"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/equalButton"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/equalButton"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="170dp"
+        android:backgroundTint="#4A026E"
+        android:text="@string/equal"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/lessButton"
+        app:layout_constraintStart_toEndOf="@+id/greaterButton"
+        app:layout_constraintTop_toBottomOf="@+id/timer"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/lessButton"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="150dp"
+        android:backgroundTint="#4A026E"
+        android:text="@string/less"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/equalButton"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/rightExpression"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="60dp"
+        android:background="#FDCA66"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leftExpression"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/leftExpression"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="5dp"
+        android:background="#FDCA66"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/rightExpression"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wrong"
+        android:layout_width="292dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/baloo"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/correct"
+        app:layout_constraintEnd_toStartOf="@+id/rightExpression"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toEndOf="@+id/leftExpression"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <TextView
+        android:id="@+id/correct"
+        android:layout_width="292dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/baloo"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/rightExpression"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toEndOf="@+id/leftExpression"
+        app:layout_constraintTop_toBottomOf="@+id/wrong" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="240dp"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/gameOver"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/gameOver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_game_over"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="214dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/acme"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="483dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="46dp"
+        android:text="@string/select_whether_the_evaluation_of_the_first_statement_is_greater_than_equal_to_or_less_than_the_evaluation_of_the_second_statement"
+        android:textAlignment="center"
+        android:textColor="#717070"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/result" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/first_statement"
+        android:textColor="#717070"
+        app:layout_constraintBottom_toTopOf="@+id/leftExpression"
+        app:layout_constraintEnd_toEndOf="@+id/leftExpression"
+        app:layout_constraintStart_toStartOf="@+id/leftExpression" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/second_statement"
+        android:textColor="#717070"
+        app:layout_constraintBottom_toTopOf="@+id/rightExpression"
+        app:layout_constraintEnd_toEndOf="@+id/rightExpression"
+        app:layout_constraintStart_toStartOf="@+id/rightExpression" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

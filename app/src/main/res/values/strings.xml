@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Calculative Skills</string>
+    <string name="new_game">NEW GAME</string>
+    <string name="about">ABOUT</string>
+    <string name="i_confirm_that_i_understand_what_plagiarism_is_and_have_read_and_understood_the_section_on_assessment_offences_in_the_essential_information_for_students_the_work_that_i_have_submitted_is_entirely_my_own_any_work_from_other_authors_is_duly_referenced_and_acknowledged">I confirm that I understand what plagiarism is and have read and understood the section on Assessment Offences in the Essential Information for Students. The work that I have submitted is entirely my own. Any work from other authors is duly referenced and acknowledged.</string>
+    <string name="student_name_dhanushka_samarakoon">Student Name : Dhanushka Samarakoon</string>
+    <string name="student_id_20200803">Student ID : 20200803</string>
+    <string name="greater">GREATER</string>
+    <string name="less">LESS</string>
+    <string name="equal">EQUAL</string>
+    <string name="logo">logo</string>
+    <string name="gameOver">gameOver</string>
+    <string name="student_id_20200803_w1833667">Student ID : 20200803 / W1833667</string>
+    <string name="select_whether_the_evaluation_of_the_first_statement_is_greater_than_equal_to_or_less_than_the_evaluation_of_the_second_statement">Select Whether the Evaluation of the First Statement is Greater than, Equal to, or Less than the Evaluation of the Second Statement.</string>
+    <string name="first_statement">First Statement</string>
+    <string name="second_statement">Second Statement</string>
+</resources>
